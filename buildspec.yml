@@ -4,6 +4,8 @@ phases:
     commands:
       - powershell -command '.\test.ps1'
       - echo "comm executed"
+      - $psversiontable
   build:
     commands:
       - echo "cholche"
+
