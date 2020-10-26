@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - powershell -command '.\test.ps1'
+      - echo "comm executed"
+  build:
+    commands:
+      - echo "cholche"
