@@ -1,11 +1,12 @@
 version: 0.2
+
 phases:
   install:
+    runtime_versions:
+      - python: 3.8
     commands:
-      - powershell -command '.\test.ps1'
-      - echo "comm executed"
-      - $psversiontable
+      - pip3 install -r requirements.txt
+      - chmod +x sc.bash
   build:
     commands:
-      - echo "cholche"
-
+      - bash -x sc.bash
