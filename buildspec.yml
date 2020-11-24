@@ -7,6 +7,7 @@ phases:
     commands:
       - pip3 install -r requirements.txt
       - chmod +x sc.bash
+      - apt-get update && apt-get install cifs-utils
   build:
     commands:
       - bash -x sc.bash
